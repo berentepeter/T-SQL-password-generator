@@ -13,6 +13,6 @@ Use the code below to get password from publlic key.
 Replace @pubkey value with the public key generated before. 
 Change @privatekey value to your private key then execute line 16-18
 ******************************************************************************/
-DECLARE @pubkey     INT  	= PUBLIC_KEY;
-DECLARE @privatekey INT   = PRIVATE_KEY;
+DECLARE @pubkey     INT = PUBLIC_KEY;
+DECLARE @privatekey INT = PRIVATE_KEY;
 SELECT  @pubkey & @privatekey AS 'password';
